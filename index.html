@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+	<title>자바스크립트 실습</title>
+	<style>
+		input{font-size: 0.9em;}
+		button{font-size: 0.9em}
+		body{font-size: 1.05em;}
+	</style>
+</head>
+<body>
+	
+	<h1 id="display">pound를 kg으로 환산해보세요</h1>
+
+	<input type = "text" id="pound" placeholder="당신의 체중을 알려주세요"> pound
+	<br><button id="action">계산하기</button>
+
+	<script>
+		
+		action.onclick = function(){
+			console.log("ok"); 
+			var myPound = pound.value;
+			chaheOk(myPound);
+		}
+	function chaheOk(pound){
+		var chaheOk = (pound) * 0.45359237;
+		var text = pound + "pound는" + chaheOk + "kg입니다.";
+		display.innerHTML = text; 
+	}
+		
+	</script>
+</body>
